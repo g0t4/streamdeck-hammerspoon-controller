@@ -3,3 +3,10 @@ I am moving some code from my dotfiles repo here... so I can keep it separate of
   - due to time and complexity and some limitations/performance considerations...
 - separately I worked on using hammerspoon global functions as macros for streamdeck buttons via the official streamdeck controller... IOTW switch from using applescript as the button macro/logic... to using hammerspoon's AX framework wrappers thus giving me lua code instead of shitty applescript code for UX automation tasks... us AXUIElement in hammerspoon...
   - this later code is all I want in dotfiles repo for now... that way agents don't get confused when I ask for changes to my button macros (and think I want that code to go into the streamdeck controller that I am not using  and thus moved to this repo)
+
+## FYI
+
+parts of this will very likely be broken after moving to a new repo and as time passes with changes in the dotfiles repo
+- also I added `controller` directory to house the streamdeck controller implementation... but never tested after that re-org here
+  so there might be some broken require calls
+  basically I did `config.macros.streamdeck` => `config.macros.streamdeck.controller` but did not test this
