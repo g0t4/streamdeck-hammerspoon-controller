@@ -4,6 +4,7 @@ if not verboseStreamDeckLogsOn then
     print("streamdeck: VERBOSE LOGGING IS OFF")
 end
 local log = require('hs.logger').new("streamdeck", verboseStreamDeckLogsOn and "verbose" or "warning")
+-- FYI resolve_home_path is in my dotfiles repo in .config/hammerspoon/config/helpers/misc.lua... this is broken until you wire it up
 local hsIcons = resolve_home_path("~/repos/github/g0t4/dotfiles/misc/hammerspoon-icons/")
 
 hsIconCache = {}
