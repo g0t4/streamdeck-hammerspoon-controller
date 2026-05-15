@@ -1,5 +1,5 @@
 local f = require('config.helpers.underscore')
-verbose = require('config.macros.streamdeck.helpers').verbose
+verbose = require('config.macros.streamdeck.controller.helpers').verbose
 
 ---@class AppsObserver
 ---@field interAppWatcher hs.application.watcher
@@ -56,7 +56,7 @@ function AppsObserver:onAppActivated(appTitle, _hsApp)
     if not appModuleName then
         print("[WARN]  no appModulueName for " .. quote(appTitle))
     else
-        local success, module = pcall(require, "config.macros.streamdeck.profiles." .. appModuleName)
+        local success, module = pcall(require, "config.macros.streamdeck.controller.profiles." .. appModuleName)
         if success and module then
             activeObserver = module
             -- BTW this app specific observer is now active EVEN IF NO DECKS ARE CLAIMED BY IT
@@ -73,13 +73,13 @@ function AppsObserver:onAppActivated(appTitle, _hsApp)
 
     -- load always-on fallback observers
     if not testingObserver and isTestingEnabled then
-        local success, testingModule = pcall(require, "config.macros.streamdeck.profiles.testing")
+        local success, testingModule = pcall(require, "config.macros.streamdeck.controller.profiles.testing")
         if success and testingModule then
             testingObserver = testingModule
         end
     end
     if not defaultObserver then
-        local success, defaultsModule = pcall(require, "config.macros.streamdeck.profiles.defaults")
+        local success, defaultsModule = pcall(require, "config.macros.streamdeck.controller.profiles.defaults")
         if success and defaultsModule then
             defaultObserver = defaultsModule
         end

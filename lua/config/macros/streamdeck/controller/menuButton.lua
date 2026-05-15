@@ -1,6 +1,6 @@
-local PushButton = require('config.macros.streamdeck.pushButton')
-require('config.macros.streamdeck.iconHelpers')
-require('config.macros.streamdeck.helpers')
+local PushButton = require('config.macros.streamdeck.controller.pushButton')
+require('config.macros.streamdeck.controller.iconHelpers')
+require('config.macros.streamdeck.controller.helpers')
 
 --- search is slow so if at all possible provide table w/ exact path
 ---   only need string if location changes or text changes base don app/machine/user/etc

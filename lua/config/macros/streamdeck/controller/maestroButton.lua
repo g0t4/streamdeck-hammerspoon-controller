@@ -1,6 +1,6 @@
-require('config.macros.streamdeck.helpers')
-require('config.macros.streamdeck.commands')
-local PushButton = require('config.macros.streamdeck.pushButton')
+require('config.macros.streamdeck.controller.helpers')
+require('config.macros.streamdeck.controller.commands')
+local PushButton = require('config.macros.streamdeck.controller.pushButton')
 
 ---@class MaestroButton : PushButton
 ---@field macro string @Name or UUID

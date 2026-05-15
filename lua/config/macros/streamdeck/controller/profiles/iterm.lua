@@ -1,7 +1,7 @@
-local MaestroButton = require('config.macros.streamdeck.maestroButton')
-local KeyStrokeButton = require('config.macros.streamdeck.keystrokeButton')
-local LuaButton = require('config.macros.streamdeck.luaButton')
-local AppObserver = require('config.macros.streamdeck.profiles.appObserver')
+local MaestroButton = require('config.macros.streamdeck.controller.maestroButton')
+local KeyStrokeButton = require('config.macros.streamdeck.controller.keystrokeButton')
+local LuaButton = require('config.macros.streamdeck.controller.luaButton')
+local AppObserver = require('config.macros.streamdeck.controller.profiles.appObserver')
 
 local ItermProfile = AppObserver:new(APPS.iTerm)
 

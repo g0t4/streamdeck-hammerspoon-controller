@@ -1,4 +1,4 @@
-PushButton = require('config.macros.streamdeck.pushButton')
+PushButton = require('config.macros.streamdeck.controller.pushButton')
 
 -- a button that executes a lua script
 ---@class LuaButton : PushButton

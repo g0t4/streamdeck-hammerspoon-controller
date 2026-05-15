@@ -1,9 +1,9 @@
-local AppObserver = require('config.macros.streamdeck.profiles.appObserver')
-local MaestroButton = require('config.macros.streamdeck.maestroButton')
-local KeyStrokeButton = require('config.macros.streamdeck.keystrokeButton')
-local verbose = require('config.macros.streamdeck.helpers').verbose
-local MenuButton = require('config.macros.streamdeck.menuButton')
-local LuaButton = require('config.macros.streamdeck.luaButton')
+local AppObserver = require('config.macros.streamdeck.controller.profiles.appObserver')
+local MaestroButton = require('config.macros.streamdeck.controller.maestroButton')
+local KeyStrokeButton = require('config.macros.streamdeck.controller.keystrokeButton')
+local verbose = require('config.macros.streamdeck.controller.helpers').verbose
+local MenuButton = require('config.macros.streamdeck.controller.menuButton')
+local LuaButton = require('config.macros.streamdeck.controller.luaButton')
 
 
 

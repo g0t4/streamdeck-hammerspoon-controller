@@ -1,4 +1,4 @@
-local verbose = require('config.macros.streamdeck.helpers').verbose
+local verbose = require('config.macros.streamdeck.controller.helpers').verbose
 
 function reloadOnMacrosChanges(path)
     local scriptPath = path or "/Users/wesdemos/.hammerspoon/config/macros"

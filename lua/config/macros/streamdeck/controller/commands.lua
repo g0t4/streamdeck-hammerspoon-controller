@@ -1,4 +1,4 @@
-local verbose = require('config.macros.streamdeck.helpers').verbose
+local verbose = require('config.macros.streamdeck.controller.helpers').verbose
 function runCommand(cmd)
     -- AVOID hs.execute and os.execute... PITA, can't see STDERR or not easily
     local handle = io.popen(cmd .. " 2>&1") -- Redirects STDERR to STDOUT

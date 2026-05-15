@@ -2,10 +2,10 @@
 --   docks: https://daurnimator.github.io/lua-http/0.4/
 --   https://github.com/daurnimator/lua-http/blob/master/http/websocket.lua
 local json = require('dkjson')
-require('config.macros.streamdeck.obs.constants')
-require('config.macros.streamdeck.obs.helpers')
+require('config.macros.streamdeck.controller.obs.constants')
+require('config.macros.streamdeck.controller.obs.helpers')
 
-local connectAndAuthenticate = require('config.macros.streamdeck.obs.connect').connectAndAuthenticate
+local connectAndAuthenticate = require('config.macros.streamdeck.controller.obs.connect').connectAndAuthenticate
 
 local M = {}
 
