@@ -1,4 +1,4 @@
-local verbose = require("config.macros.streamdeck.helpers").verbose
+local verbose = require('config.macros.streamdeck.helpers').verbose
 
 
 ---@class EncodersController

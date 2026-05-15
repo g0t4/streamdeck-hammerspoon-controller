@@ -1,4 +1,4 @@
-local f = require("config.helpers.underscore")
+local f = require('config.helpers.underscore')
 -- https://www.hammerspoon.org/docs/hs.axuielement.observer.html
 
 

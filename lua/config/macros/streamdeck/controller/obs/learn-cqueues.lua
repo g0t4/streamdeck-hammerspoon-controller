@@ -1,8 +1,8 @@
 --
 -- TODO try this with obs websocket code
 -- https://25thandclement.com/~william/projects/cqueues.html
-local cqueues = require("cqueues")
-local socket = require("cqueues.socket")
+local cqueues = require('cqueues')
+local socket = require('cqueues.socket')
 
 local con = socket.connect("www.google.com", 443)
 con:starttls()

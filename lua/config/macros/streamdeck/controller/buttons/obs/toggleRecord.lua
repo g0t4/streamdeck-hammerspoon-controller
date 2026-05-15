@@ -1,8 +1,8 @@
-local PushButton = require("config.macros.streamdeck.pushButton")
-local connectAndAuthenticate = require("config.macros.streamdeck.obs.connect").connectAndAuthenticate
-local json = require("dkjson")
-require("config.macros.streamdeck.obs.constants")
-require("config.macros.streamdeck.obs.helpers")
+local PushButton = require('config.macros.streamdeck.pushButton')
+local connectAndAuthenticate = require('config.macros.streamdeck.obs.connect').connectAndAuthenticate
+local json = require('dkjson')
+require('config.macros.streamdeck.obs.constants')
+require('config.macros.streamdeck.obs.helpers')
 
 ---@class ToggleRecordButton : PushButton
 local ToggleRecordButton = setmetatable({}, { __index = PushButton })

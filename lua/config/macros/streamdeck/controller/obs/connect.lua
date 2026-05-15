@@ -1,5 +1,5 @@
-local http_websocket = require("http.websocket")
-local json = require("dkjson")
+local http_websocket = require('http.websocket')
+local json = require('dkjson')
 
 local M = {}
 

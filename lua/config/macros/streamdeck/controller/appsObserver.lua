@@ -1,5 +1,5 @@
-local f = require("config.helpers.underscore")
-verbose = require("config.macros.streamdeck.helpers").verbose
+local f = require('config.helpers.underscore')
+verbose = require('config.macros.streamdeck.helpers').verbose
 
 ---@class AppsObserver
 ---@field interAppWatcher hs.application.watcher

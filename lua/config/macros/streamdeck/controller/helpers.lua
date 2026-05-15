@@ -3,7 +3,7 @@ local verboseStreamDeckLogsOn = false -- make it easy to toggle (maybe even more
 if not verboseStreamDeckLogsOn then
     print("streamdeck: VERBOSE LOGGING IS OFF")
 end
-local log = require("hs.logger").new("streamdeck", verboseStreamDeckLogsOn and "verbose" or "warning")
+local log = require('hs.logger').new("streamdeck", verboseStreamDeckLogsOn and "verbose" or "warning")
 local hsIcons = resolve_home_path("~/repos/github/g0t4/dotfiles/misc/hammerspoon-icons/")
 
 hsIconCache = {}

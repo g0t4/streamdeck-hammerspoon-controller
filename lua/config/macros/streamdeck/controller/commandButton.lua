@@ -1,6 +1,6 @@
-local PushButton = require("config.macros.streamdeck.pushButton")
-require("config.macros.streamdeck.commands")
-require("config.macros.streamdeck.helpers")
+local PushButton = require('config.macros.streamdeck.pushButton')
+require('config.macros.streamdeck.commands')
+require('config.macros.streamdeck.helpers')
 
 
 ---@class CommandButton : PushButton

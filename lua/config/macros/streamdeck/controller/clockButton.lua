@@ -1,6 +1,6 @@
-require("config.macros.streamdeck.iconHelpers")
-require("config.macros.streamdeck.helpers")
-PushButton = require("config.macros.streamdeck.pushButton")
+require('config.macros.streamdeck.iconHelpers')
+require('config.macros.streamdeck.helpers')
+PushButton = require('config.macros.streamdeck.pushButton')
 
 ---@param deck DeckController
 local function getTimeImage(deck)

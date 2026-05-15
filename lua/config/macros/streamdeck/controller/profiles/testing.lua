@@ -1,12 +1,12 @@
-local MaestroButton = require("config.macros.streamdeck.maestroButton")
-local KeyStrokeButton = require("config.macros.streamdeck.keystrokeButton")
-local LuaButton = require("config.macros.streamdeck.luaButton")
-local AppObserver = require("config.macros.streamdeck.profiles.appObserver")
-local ClockButton = require("config.macros.streamdeck.clockButton")
-local Encoder = require("config.macros.streamdeck.encoder")
-local CommandButton = require("config.macros.streamdeck.commandButton")
-local AppButton = require("config.macros.streamdeck.appButton")
-local f = require("config.helpers.underscore")
+local MaestroButton = require('config.macros.streamdeck.maestroButton')
+local KeyStrokeButton = require('config.macros.streamdeck.keystrokeButton')
+local LuaButton = require('config.macros.streamdeck.luaButton')
+local AppObserver = require('config.macros.streamdeck.profiles.appObserver')
+local ClockButton = require('config.macros.streamdeck.clockButton')
+local Encoder = require('config.macros.streamdeck.encoder')
+local CommandButton = require('config.macros.streamdeck.commandButton')
+local AppButton = require('config.macros.streamdeck.appButton')
+local f = require('config.helpers.underscore')
 
 
 local TestingProfiles = AppObserver:new(APPS.Testing)
@@ -94,7 +94,7 @@ end)
 -- * TESTING IDEAS:
 -- PRN use ffi to inline simple C code testing:
 --   need to find ffi module to do this, it's not OOB anyways
--- local ffi = require("ffi")
+-- local ffi = require('ffi')
 --
 -- ffi.cdef [[
 -- void NSLog(const char *format, ...);

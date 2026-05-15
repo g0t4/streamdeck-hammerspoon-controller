@@ -2,10 +2,10 @@
 --    i.e. FCPX when I select a shape (title)
 --    light up the dials for adjusting its specific properties...
 --  I can do this with an accessibility observer
-local DecksController = require("config.macros.streamdeck.decksController")
-local AppsObserver = require("config.macros.streamdeck.appsObserver")
-require("config.macros.streamdeck.helpers")
-require("config.macros.streamdeck.reloader") -- side effect, comment out to disable reloader
+local DecksController = require('config.macros.streamdeck.decksController')
+local AppsObserver = require('config.macros.streamdeck.appsObserver')
+require('config.macros.streamdeck.helpers')
+require('config.macros.streamdeck.reloader') -- side effect, comment out to disable reloader
 
 -- todo add error handling that wires up only hammerspoon control buttons?
 --    puts them on all decks!
@@ -27,7 +27,7 @@ function DoASlowThing()
 end
 
 -- FINDING OBSERVER NOTIFICATIONS:
--- require("config.macros.streamdeck.profiles.tests.testAllObserverEvents")
+-- require('config.macros.streamdeck.profiles.tests.testAllObserverEvents')
 
 
 
@@ -41,7 +41,7 @@ end
 
 -- *** TESTS:
 -- ! FYI window.filters BREAKS ALL AXUIELEMENT OBSERVERS (however, hs.application.watcher still works)
--- local windowFilters = require("config.macros.streamdeck.profiles.tests.testWindowsFilters")
+-- local windowFilters = require('config.macros.streamdeck.profiles.tests.testWindowsFilters')
 
 
 

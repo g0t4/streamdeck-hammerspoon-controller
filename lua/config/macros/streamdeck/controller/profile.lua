@@ -1,4 +1,4 @@
-local f = require("config.helpers.underscore")
+local f = require('config.helpers.underscore')
 
 ---@class Profile
 ---@field name string

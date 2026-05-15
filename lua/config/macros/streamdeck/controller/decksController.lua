@@ -1,5 +1,5 @@
-local DeckController = require("config.macros.streamdeck.deckController")
-local verbose = require("config.macros.streamdeck.helpers").verbose
+local DeckController = require('config.macros.streamdeck.deckController')
+local verbose = require('config.macros.streamdeck.helpers').verbose
 
 
 ---@class DecksController

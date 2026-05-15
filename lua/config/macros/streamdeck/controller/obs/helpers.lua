@@ -1,5 +1,5 @@
-local json = require("dkjson")
-local connectAndAuthenticate = require("config.macros.streamdeck.obs.connect").connectAndAuthenticate
+local json = require('dkjson')
+local connectAndAuthenticate = require('config.macros.streamdeck.obs.connect').connectAndAuthenticate
 
 function printJson(message, table)
     print(message, json.encode(table, { indent = true }))
